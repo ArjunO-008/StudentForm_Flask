@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="pattern-dots-sm">
+      <div class="card">
+        <h2 style="text-decoration: underline;">Student Form</h2>
+        <form method="post" action="/submit">
+          <label for="studentID">Student ID:</label>
+          <input type="text" id="studentID" name="studentID" required/>
+          <label for="username">Name:</label>
+          <input type="text" id="username" name="username" required/>
+          <label for="department">Department:</label>
+          <input type="text" id="department" name="department" required/>
+          <label for="studentClass">Class:</label>
+          <input type="text" id="studentClass" name="studentClass" required/>
+          <label for="phoneNo">Phone No:</label>
+          <input type="tel" id="phoneNo" name="phoneNo" required />
+          <input type="submit" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
